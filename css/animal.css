@@ -1,0 +1,356 @@
+        :root {
+            --primary-color: #28a745;
+            --primary-hover: #218838;
+            --success-bg: #e8f5e9;
+            --card-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .page-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .back-button {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .pet-id {
+            background-color: #e9ecef;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .lost-alert {
+    background-color: #ffeeee;
+    border-left: 4px solid #ff5252;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+    }
+}
+
+.lost-alert-title {
+    font-weight: 700;
+    color: #d32f2f;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.lost-alert-icon {
+    margin-right: 8px;
+    color: #d32f2f;
+}
+
+.lost-alert-message {
+    margin-bottom: 15px;
+    color: #d32f2f;
+}
+
+.lost-alert-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.contact-button.urgent-button {
+    background-color: #d32f2f;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+    border: none;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.contact-button.urgent-button:hover {
+    background-color: #b71c1c;
+    transform: translateY(-2px);
+}
+
+.contact-button.found-button {
+    background-color: #388e3c;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+    border: none;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.contact-button.found-button:hover {
+    background-color: #2e7d32;
+    transform: translateY(-2px);
+}
+        .contact-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+        
+        .contact-button:hover {
+            background-color: var(--primary-hover);
+            color: white;
+        }
+        
+        .main-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        
+        .animal-image-container {
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .animal-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        .card-header {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .card-header h2 {
+            margin: 0;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .pet-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        .badge-vaccinated {
+            background-color: var(--success-bg);
+            color: var(--primary-color);
+            border: 1px solid #c8e6c9;
+        }
+        
+        .badge-not-vaccinated {
+            background-color: #ffebee;
+            color: #c62828;
+            border: 1px solid #ffcdd2;
+        }
+        
+        .info-section {
+            padding: 20px;
+        }
+        
+        .section-title {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin: 20px 0 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        
+        .info-item {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .info-label {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-bottom: 3px;
+        }
+        
+        .info-value {
+            font-weight: 500;
+        }
+        
+        .contact-container {
+            margin-top: 25px;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        
+        .contact-title {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: #495057;
+        }
+        
+        .contact-methods {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background-color: white;
+            padding: 8px 15px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #495057;
+            border: 1px solid #dee2e6;
+            transition: all 0.2s;
+        }
+        
+        .contact-method:hover {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        
+        .admin-button {
+            background-color: #343a40;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.2s;
+        }
+        
+        .admin-button:hover {
+            background-color: #23272b;
+            color: white;
+        }
+        
+        .location-loading, .location-success, .location-info {
+            padding: 10px 15px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .location-loading {
+            background-color: #e3f2fd;
+            color: #1976d2;
+        }
+        
+        .location-success {
+            background-color: var(--success-bg);
+            color: var(--primary-color);
+        }
+        
+        .location-info {
+            background-color: #fff3e0;
+            color: #e65100;
+        }
+    .location-message-container.top-center {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+.location-info {
+    background-color: #fff3e0;
+    color: #e65100;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: inline-block;
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from { 
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.location-info i {
+    margin-right: 8px;
+}
+/* Animal Not Found Modal Styles */
+#animalNotFoundModal .modal-header {
+    background-color: #dc3545;
+}
+
+#animalNotFoundModal .modal-icon {
+    font-size: 2rem;
+    color: #dc3545;
+    margin-bottom: 1rem;
+}
+
+#animalNotFoundModal .btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+#animalNotFoundModal .btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
